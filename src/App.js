@@ -2,21 +2,24 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Convention } from './pages/Convention';
-import { Home } from './pages/Home';
+import { Index } from './pages';
+import { Page } from './layout/page';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/conventions/:id">
-            <Convention />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <Page>
+        <Router>
+          <Switch>
+            <Route path="/conventions/:id">
+              <Convention />
+            </Route>
+            <Route path="/">
+              <Index />
+            </Route>
+          </Switch>
+        </Router>
+      </Page>
     </div>
   );
 }

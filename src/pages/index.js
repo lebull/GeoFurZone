@@ -1,6 +1,6 @@
 import React from 'react';
-import './home.scss';
+import './index.scss';
 import { FurconMap } from '../components/furconMap';
 
-export const Home = () => 
+export const Index = () => 
     <FurconMap/>

@@ -9,5 +9,11 @@ export const Section = ({children, top}) => {
         addClasses.push('top');
     }
 
-    return <section className={`section ${addClasses.join()}`}>{children}</section>
+    return(
+        <section className={`section ${addClasses.join()}`}>
+            <div className="section-wrapper">
+                {children}
+            </div>
+        </section>
+    );
 }

@@ -1,6 +1,15 @@
 @import "../../theme.scss";
 
 .section{
+
+    display: flex;
+    justify-content: center;
+
+    &-wrapper{
+        width: 100%;
+        max-width: 1400px;
+    }
+
     &.top{
         border-bottom: solid 20px $secondary;
     }

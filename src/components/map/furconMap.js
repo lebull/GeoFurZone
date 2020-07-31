@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactBingmaps } from 'react-bingmaps';
-import { furcons } from '../data/cons';
-import { keys } from '../data/keys';
+import { furcons } from '../../data/cons';
+import { keys } from '../../data/keys';
 import { useHistory } from "react-router-dom";
 import "./furconMap.scss";
 

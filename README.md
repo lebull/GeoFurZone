@@ -1,4 +1,4 @@
-# User Stories
+# MVP User Stories
 
 ## As a user
 
@@ -10,6 +10,7 @@
     * Registration Start/Close
     * Hotel Info/System 
 
+# Stretch
 
 ## As an authenticated user
 * I can say I am going to a convention

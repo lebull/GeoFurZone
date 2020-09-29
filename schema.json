@@ -1,0 +1,15 @@
+{
+    "TableName": "Conventions",
+    "KeySchema": [
+      { "AttributeName": "Code", "KeyType": "HASH" },
+      { "AttributeName": "Name", "KeyType": "RANGE" }
+    ],
+    "AttributeDefinitions": [
+      { "AttributeName": "Code", "AttributeType": "S" },
+      { "AttributeName": "Name", "AttributeType": "S" }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+}

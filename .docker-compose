@@ -1,0 +1,31 @@
+version: '3.3'
+
+networks:
+
+  default:
+    external:
+      name: localstack-tutorial
+
+volumes:
+
+  localstack:
+
+services:
+
+  localstack:
+    image: localstack/localstack:0.10.7
+    ports:
+      - 8080:8080
+      - 8000:8000 # dynamodb
+      - 4574:4574 # lamba
+    environment:
+      - DATA_DIR=/tmp/localstack/data
+      - DEBUG=1
+      - DEFAULT_REGION=ap-southeast-2
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - LAMBDA_EXECUTOR=docker-reuse
+      - PORT_WEB_UI=8080
+      - SERVICES=lambda,dynamodb
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - localstack:/tmp/localstack/data

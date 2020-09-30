@@ -22,7 +22,7 @@ export const Index = () =>
             <Row>
                 { conventions.map(con => 
                     <Col sm={12} md={6}>
-                        <Summary title={con.name} summary={con.summary} />
+                        <Summary title={con.name} summary={con.summary} image={con.image} alt={`${con.name} logo image`}/>
                     </Col>
                 ) }
             </Row>

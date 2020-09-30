@@ -18,7 +18,7 @@ export const conventions = [
             "latlong": "32.775812, -96.809319",
         },
         "size": "large",
-        "image": "https://en.wikifur.com/w/images/a/a9/MFF-2015-Banner.png",
+        "image": "https://en.wikifur.com/w/images/e/e5/FFLogotForWikia.png",
         "summary": "This bullshit is actually a lot better, until you realize that you’ve been wandering around for 4 entire days without getting your fucking four cheese chalupa from Taco Bell, you miserable slob"
     }
 ]

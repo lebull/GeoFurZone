@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Convention } from './pages/Convention';
+import { Convention } from './pages/convention';
 import { Index } from './pages';
 import { Page } from './layout/page';
 

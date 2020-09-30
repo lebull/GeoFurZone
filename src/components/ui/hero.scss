@@ -1,11 +1,13 @@
 @import "../../theme.scss";
 
 .hero{
-    background-image: url("/images/furcrowd_edited.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 669px;
+    // background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
 }
 
 .hero-content {

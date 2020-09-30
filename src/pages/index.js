@@ -2,8 +2,11 @@ import React from 'react';
 import './index.scss';
 import { Hero, HeroContent } from '../components/ui/hero';
 import { Section } from '../components/ui/section';
+import { conventions } from '../data/cons';
+import { Summary } from '../components/ui/summary';
 
-export const Index = () => 
+export const Index = () =>
+    <div>
     <Section top>
         <Hero>
             <HeroContent>
@@ -12,3 +15,7 @@ export const Index = () =>
             </HeroContent>
         </Hero>
     </Section>
+    <Section>
+        { conventions.map(con => <Summary title={con.name} summary={con.summary} /> ) }
+    </Section>
+    </div>

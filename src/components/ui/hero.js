@@ -1,5 +1,8 @@
 import React from 'react';
 import './hero.scss';
+import styled from 'styled-components';
+
+
 
 export const Hero = ({children}) => {
 
@@ -9,15 +12,23 @@ export const Hero = ({children}) => {
 
     const backgroundImage = "./images/TFF-2019-2.jpg";
 
+    const Hero = styled.section`
+        background: url(${backgroundImage});
+        background-color: rgb(109, 109, 109);
+        background-blend-mode: color-burn;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 669px;
+
+    `;
 
     return(
-        <section className="hero center" style={
-            {
-               backgroundImage: `url(${backgroundImage})`,      
-            }
-         }>
+        <Hero>
             {children}
-        </section>
+        </Hero>
     );
 }
 

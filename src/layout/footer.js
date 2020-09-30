@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Section } from '../components/ui/section'
 
+import "./footer.scss";
 
-export const Footer = () => 
-    <footer>
+
+export const Footer = () => {
+    return <footer>
         <Section>
             <FontAwesomeIcon icon={faTwitter} />
             <hr />
@@ -14,3 +16,4 @@ export const Footer = () =>
             </p>
         </Section>
     </footer>
+}
